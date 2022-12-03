@@ -12,13 +12,13 @@ class DayItem extends Component {
 
   getDayWeek(numWeek) {
     const weekDay = {
-      1: 'SAT',
-      2: 'SUN',
-      3: 'MON',
-      4: 'TUE',
-      5: 'WEN',
-      6: 'THU',
-      7: 'SAT',
+      0: 'SUN',
+      1: 'MON',
+      2: 'TUE',
+      3: 'WED',
+      4: 'THU',
+      5: 'FRI',
+      6: 'SAT',
     }
 
     return weekDay[numWeek]

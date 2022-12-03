@@ -8,14 +8,28 @@ class Calendar extends Component {
     super()  
     this.dateNow = new Date()
   }
+
+  itemContructor() {
+    const column = []
+    for (let index = 0; index < 7; index++) {
+      const tomorrow = new Date()
+      tomorrow.setDate(this.dateNow.getDate() + index)
+      column.push(
+        <DayItem
+            key={`day-${index}`}
+            day={tomorrow.getDate()}
+            week={tomorrow.getDay()}
+          />
+      )
+    }
+
+    return column
+  }
   
   render() {
     return (
       <div id="container-calendar">
-          <DayItem
-            day={this.dateNow.getDate()}
-            week={this.dateNow.getDay()}
-          />
+          {this.itemContructor()}
       </div>
     );
   }
