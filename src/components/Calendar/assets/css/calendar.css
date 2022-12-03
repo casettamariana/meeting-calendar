@@ -1,0 +1,11 @@
+#container-calendar{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1em;
+    font-family: 'Kanit', sans-serif;
+
+}
