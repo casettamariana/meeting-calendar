@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <div id="container-calendar" class="night">
+        <div id="container-calendar" className="night">
           <Calendar/>
         </div>
       </div>
