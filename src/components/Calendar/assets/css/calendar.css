@@ -7,5 +7,11 @@
 
     padding: 0.5em;
     font-family: 'Kanit', sans-serif;
+}
 
+@media (max-width: 850px) {
+    #container-calendar{
+        flex-direction: column;
+        max-width: max-content;
+    }
 }

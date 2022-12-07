@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './day-item.css'
+import '../assets/css/day-item.css'
 
 class DayItem extends Component {
 
