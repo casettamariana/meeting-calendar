@@ -7,6 +7,17 @@ class Calendar extends Component {
   constructor() {
     super()  
     this.dateNow = new Date()
+    this.state = {
+      week: null,
+      day: null
+    }
+  }
+
+  callbackFunction = (childData) => {
+    this.setState({
+      week: childData.week,
+      day: childData.day
+    })
   }
 
   itemContructor() {
@@ -19,6 +30,7 @@ class Calendar extends Component {
             key={`day-${index}`}
             day={tomorrow.getDate()}
             week={tomorrow.getDay()}
+            inputDataChild={this.callbackFunction}
           />
       )
     }

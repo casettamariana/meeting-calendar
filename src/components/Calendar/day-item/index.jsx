@@ -9,7 +9,9 @@ class DayItem extends Component {
     this.dateNow = props.day
     this.week = this.getDayWeek(props.week)
 
-    this.clickCalendar = this.clickCalendar.bind(this)
+    this.clickCalendar = () => {
+      props.inputDataChild(this.props)
+    }
   }
 
   getDayWeek(numWeek) {
@@ -24,10 +26,6 @@ class DayItem extends Component {
     }
 
     return weekDay[numWeek]
-  }
-
-  clickCalendar() {
-    console.log(this);
   }
 
   render() {
