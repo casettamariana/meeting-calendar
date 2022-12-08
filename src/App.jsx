@@ -4,6 +4,7 @@ import './assets/fonts/Kanit/Kanit-Regular.ttf'
 import './assets/css/app.css'
 
 import Calendar from './components/Calendar';
+// import Form from './components/Form';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div id="main">
         <div id="container-calendar" className="night">
           <Calendar/>
+          {/* <Form/> */}
         </div>
       </div>
     );

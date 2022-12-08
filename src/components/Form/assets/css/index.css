@@ -1,0 +1,38 @@
+form {
+    height: 40vh;
+    font-family: 'Kanit', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    align-content: space-around;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+label {
+    align-self: flex-start;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .inputGroup {
+        padding: 0rem;
+        width: 25vw;
+    }
+}
+
